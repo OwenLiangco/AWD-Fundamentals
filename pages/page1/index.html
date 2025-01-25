@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Fundamentals Demonstration</title>
+    <link rel="stylesheet" href="/pages/page1/assets/css/style.css">
+</head>
+<body>
+    <div class = "container">
+    <div class = "section">
+        <h2>Variables & Input and Output</h2>
+        <p><b>Variables</b> are used to store data or values, like numbers, text, or other information. They let you reuse and manipulate this data in the program. </p>
+        <p>While <b>Input and Output Statements</b> allows users to input and provide data to the program, while output displays results or feedback. Together, they make programs interactive, Go ahead and input something!</p>
+        <label for="userInput">Enter Something: </label>
+        <input type="text" id="userInput">
+        <button onclick="showInput()">Submit</button>
+        <p id = "output"></p>
+    </div>
+
+    <div class="section">
+        <h2>Conditionals</h2>
+        <p><b>Conditionals</b> let your program make decisions based on specific conditions. For example, try putting a number and it will determine if its an odd number or an even number.</p>
+        <label for = "numberInput">Enter a number: </label>
+        <input type = "number" id="numberInput">
+        <button onclick="checkOddEven()">Check if its Odd or Even</button>
+        <p id ="conditionalOutput"></p>
+    </div>
+
+    <div class="section">
+        <h2>Looping</h2>
+        <p><b>Loops</b> allow your program to repeat actions or process data multiple times efficiently, click the button it will create a list of numbers from 1-5! (In looping it will become false when it hits a certain statement, and it will execute until that statement has been met.)</p>
+        <button onclick="displayNumbers()">Display Numbers 1-5</button>
+        <ul id="loopOutput"></ul>
+    </div>
+
+    <button onclick = "window.location.href='/index.html'">Back to the Home Page</button>
+    <p>Then that ends our small and brief lesson of the 4 fundamentals of Javascript, See you next time!</p>
+</div>
+<script src ="assets/js/scripts.js"></script>
+</body>
+</html>
